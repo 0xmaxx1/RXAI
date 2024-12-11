@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+:root {
+  --primary-color: #296f7c99;
+  --secondary-color: #bddee466;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  user-select: none;
+}
+body {
+  font-family: "Mulish", sans-serif;
+}
+/* start Header  */
+main {
+  min-height: 100vh;
+}
+header {
+  padding-inline: 38px;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  padding-top: 38px;
+  gap: 7px;
+}
+header .logo > .logoimg {
+  width: 23px;
+  height: 57px;
+}
+header .logo .logoname {
+  width: 103px;
+  height: 47px;
+}
+/* End Header  */
+/* Start Section  */
+.medicalimage {
+  position: absolute;
+  right: -127px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.medicalimage img {
+  width: 316px;
+  height: 322px;
+}
+.input {
+  width: 50%;
+  background-color: var(--primary-color);
+  height: 100vh;
+  position: relative;
+}
+form label {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500; /*   stop   */
+  line-height: 3.6rem;
+}
+form input {
+  width: 508px;
+  height: 78px;
+  padding: 15px 18px;
+  color: #fff;
+  font-size: 32px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #bddee4;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+}
+form input::placeholder {
+  color: #fff;
+  font-weight: 200;
+  font-family: "Mulish", sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 95px);
+  margin-top: -45px;
+  margin-right: 100px;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+form button {
+  display: flex;
+  max-width: 508px;
+  max-height: 78px;
+  padding: 3px 172px 3px 171px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 2px solid #296f7c;
+  background-color: #e5f2f4;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  color: #7fa9b0;
+  font-family: "Mulish", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 4.5rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  margin-top: 14px;
+}
+form button:hover {
+  color: #e5f2f4;
+  border: 2px solid #7fa9b0;
+  background-color: #296f7c;
+}
+.output h4 {
+  color: #000;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.2rem;
+}
+.output .best div {
+  padding: 24px 18px;
+}
+.output .best div,
+.output .alternatives div {
+  width: 508px;
+  height: 78px;
+  border-radius: 15px;
+  border: 2px solid #000;
+  background: #fff;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+}
+.output {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  width: 50%;
+}
+.output .alternatives div span {
+  line-height: 30px;
+}
+.output div span {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  display: block;
+}
+.output .alternatives div {
+  height: 240px;
+  padding: 44px 18px;
+  overflow-y: scroll;
+}
+.output .alternatives div::-webkit-scrollbar {
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  width: 15px;
+}
+.output .alternatives div::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  width: 12px;
+}
+form input,
+.output .alternatives div::-webkit-scrollbar,
+.output .alternatives div::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+section {
+  display: flex;
+  height: 100%;
+}
+/* End Section  */
+@media (max-width: 1750px) {
+  .medicalimage {
+    right: -110px;
+  }
+  .medicalimage img {
+    width: 274px;
+    height: 280px;
+  }
+}
+@media (max-width: 1585px) {
+  .medicalimage {
+    right: -90px;
+  }
+  .medicalimage img {
+    width: 224px;
+    height: 230px;
+  }
+}
+@media (max-width: 1450px) {
+  .medicalimage {
+    right: -73px;
+  }
+  .medicalimage img {
+    width: 184px;
+    height: 190px;
+  }
+}
+@media (max-width: 1345px) {
+  .medicalimage {
+    display: none;
+  }
+  form {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1100px) {
+  section {
+    flex-direction: column;
+  }
+  .input,
+  .output {
+    width: 100%;
+  }
+  .output {
+    padding-top: 30px;
+    height: 100vh;
+  }
+}
+@media (max-width: 560px) {
+  form .strength,
+  form .ingredient,
+  .output .alternatives,
+  .output .best,
+  form input,
+  .output .best div,
+  .output .alternatives div {
+    width: 90%;
+    margin-inline: auto;
+  }
+  form button {
+    width: 81%;
+    padding-inline: 0px;
+    font-size: 35px;
+  }
+  .output h4,
+  form label {
+    font-size: 26px;
+  }
+  form div {
+    gap: 5px;
+  }
+  .output .best div,
+  .output .alternatives div {
+    margin-top: 5px;
+  }
+  form input {
+    font-size: 24px;
+  }
+  header {
+    padding-inline: 13px;
+  }
+}
